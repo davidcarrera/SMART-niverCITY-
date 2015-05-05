@@ -106,7 +106,7 @@ rfid.on('data', function (card) {
   led1.toggle();
   if(ready && wifi.isConnected()) {
     var jsondata='{"channels": {"uid": {"current-value":"'+card.uid.toString('hex')+'"}}, "lastUpdate":'+Date.now()+'}'
-    //pushData(jsondata,SO_ID, "rfid");
+    pushData(jsondata,SO_ID, "rfid");
     console.log(jsondata);
   }
   led1.toggle();
