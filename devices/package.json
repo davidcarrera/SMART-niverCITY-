@@ -1,0 +1,19 @@
+{
+  "name": "SMARTuniverCITY",
+  "version": "0.0.0",
+  "description": "Hackaton stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:davidcarrera/SMARTuniverCITY.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/davidcarrera/SMARTuniverCITY/issues"
+  },
+  "homepage": "https://github.com/davidcarrera/SMARTuniverCITY"
+}
