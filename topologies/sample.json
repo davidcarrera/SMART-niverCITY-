@@ -1,0 +1,65 @@
+[
+  {
+    "id": "4f0f4181.b0f0c",
+    "type": "inject",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "30",
+    "crontab": "",
+    "once": false,
+    "x": 623,
+    "y": 549,
+    "z": "acb7f05e.53481",
+    "wires": [
+      [
+        "1fde8cb3.e02173"
+      ]
+    ]
+  },
+  {
+    "id": "def4a1de.210b6",
+    "type": "http request",
+    "name": "",
+    "method": "use",
+    "ret": "obj",
+    "url": "",
+    "x": 970,
+    "y": 549,
+    "z": "acb7f05e.53481",
+    "wires": [
+      [
+        "d8fd9d5.f27026"
+      ]
+    ]
+  },
+  {
+    "id": "d8fd9d5.f27026",
+    "type": "debug",
+    "name": "",
+    "active": true,
+    "console": "false",
+    "complete": "false",
+    "x": 1190,
+    "y": 551,
+    "z": "acb7f05e.53481",
+    "wires": []
+  },
+  {
+    "id": "1fde8cb3.e02173",
+    "type": "function",
+    "name": "",
+    "func": "var msg = {};\n\nmsg.method = \"GET\";\nmsg.url = \"http://api.servioticy.com/14307740357823a04c201250b41ebb2433d41ece89715/streams/climate/lastUpdate\";\nmsg.headers = {\n    Authorization: \"MWRiODFmZjAtMWQyYS00MDQ0LTg1ZDQtZGE2NzVkMGYwNDYzOGM2YjE1NTUtZmNjNi00MGYyLWI4NTEtNzdiMjQxMDZhZWEz\",\n};\n\nreturn msg;",
+    "outputs": 1,
+    "valid": true,
+    "x": 817,
+    "y": 552,
+    "z": "acb7f05e.53481",
+    "wires": [
+      [
+        "def4a1de.210b6"
+      ]
+    ]
+  }
+]
