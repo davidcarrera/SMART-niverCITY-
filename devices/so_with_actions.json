@@ -1,0 +1,13 @@
+{
+  "streams": {},
+  "actions": [ 
+    	{
+            "name": "led_blue",
+            "description": "toggles blue led"
+        },
+        {
+            "name": "led_green",
+            "description": "toggles green led"
+        }
+    ]
+}
